@@ -1,0 +1,39 @@
+.scale-section-wrapper {
+  clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 100%);
+
+  @include min-break-point(tablet) {
+    clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
+  }
+  @include min-break-point(large-desktop) {
+    clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
+
+.primary-stripe-line-reverse {
+  width: 20vw;
+  background-color: #0048e5;
+
+  clip-path: polygon(0 38%, 100% 0%, 100% 65%, 0% 100%);
+
+  @include min-break-point(tablet) {
+    clip-path: polygon(0 42%, 100% 0%, 100% 60%, 0% 100%);
+  }
+  @include min-break-point(large-desktop) {
+    width: 10vw;
+    clip-path: polygon(0 38%, 100% 0%, 100% 65%, 0% 100%);
+  }
+}
+
+.secondary-stripe-line-reverse {
+  width: 30vw;
+  background-color: #80e9ff;
+  clip-path: polygon(0 26%, 100% 0%, 100% 40%, 0% 100%);
+
+  @include min-break-point(tablet) {
+    clip-path: polygon(0 33%, 100% 0%, 100% 58%, 0% 100%);
+  }
+  @include min-break-point(large-desktop) {
+    clip-path: polygon(0 42%, 100% 0%, 100% 55%, 0% 100%);
+    width: 20vw;
+  }
+}
