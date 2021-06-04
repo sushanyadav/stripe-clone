@@ -1,0 +1,7 @@
+.country-lists {
+  column-count: 2;
+
+  @include min-break-point(tablet) {
+    column-count: 3;
+  }
+}

@@ -1,8 +1,9 @@
-const DropDown = ({
-  children,
-  trianglePosLeft,
-  wrapperAdditionalClassName,
-}) => {
+import ProductsDropdown from "./ProductsDropdown";
+import DevelopersDropdown from "./DevelopersDropdown";
+import UseCasesDropdown from "./UseCasesDropdown";
+import CompanyDropdown from "./CompanyDropdown";
+
+const DropDown = ({ children, wrapperAdditionalClassName }) => {
   return (
     <div
       className={`${wrapperAdditionalClassName} absolute top-16 z-50 mx-auto`}
@@ -11,22 +12,16 @@ const DropDown = ({
         left: "50%",
       }}
     >
-      <div
-        style={{
-          width: "0",
-          height: "0",
-          borderLeft: "0.6rem solid transparent",
-          borderRight: "0.6em solid transparent",
-          borderBottom: "0.6rem solid #fff",
-          position: "absolute",
-          top: "-0.4rem",
-          left: trianglePosLeft,
-          zIndex: 5,
-        }}
-      ></div>
-      <div className=" rounded-lg shadow-2xl p-10 bg-white">{children}</div>
+      {children}
     </div>
   );
+};
+
+export {
+  ProductsDropdown,
+  UseCasesDropdown,
+  DevelopersDropdown,
+  CompanyDropdown,
 };
 
 export default DropDown;

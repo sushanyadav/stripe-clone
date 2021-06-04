@@ -6,7 +6,7 @@ import DesktopNavBar from "components/Layout/Navbar/DesktopNavBar";
 import MobileNavBar from "components/Layout/Navbar/MobileNavBar";
 import Button from "components/Button";
 
-import { Logo, CloseIcon, OpenIcon } from "utils/icons";
+import { Logo, OpenIcon } from "utils/icons";
 
 export const LogoRoute = ({ withoutRouter }) => {
   if (withoutRouter) {
@@ -49,10 +49,14 @@ export default function Navbar() {
           className="md:hidden cursor-pointer text-gray-200"
           onClick={() => setOpenMenu(!openMenu)}
         >
-          {openMenu ? <CloseIcon /> : <OpenIcon />}
+          {!openMenu && (
+            <div className="bg-gray-200 rounded-xl p-2 bg-opacity-10 shadow-sm">
+              <OpenIcon />
+            </div>
+          )}
         </div>
         {openMenu && (
-          <div className="w-11/12 mx-auto bg-indigo-900 px-4 py-2 absolute top-16 left-0 right-0 rounded-md sm:hidden text-sm">
+          <div className="w-11/12 mx-auto text-gray-800 absolute z-50 top-4 left-0 right-0 md:hidden text-sm">
             <MobileNavBar closeMenu={closeMenu} />
           </div>
         )}

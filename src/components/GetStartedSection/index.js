@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import Button from "components/Button";
 import DashedLines from "components/DashedLines";
 
@@ -14,10 +16,16 @@ const GetStartedSection = () => {
               <h1 className="text-2xl w-full sm:w-4/6 font-bold text-gray-800">
                 Ready to get started?
               </h1>
-              <p className="mt-4 mb-8 lg:mb-4 text-lg lg:w-4/5 w-full">
-                Explore Stripe Payments, or create an account instantly and
-                start accepting payments. You can also contact us to design a
-                custom package for your business.
+              <p className="mt-4 mb-8 lg:mb-4 text-lg lg:w-4/5 w-full text-gray-600">
+                Explore{" "}
+                <Link href="#">
+                  <a className="text-blue-600 hover:text-blue-900">
+                    Stripe Payments
+                  </a>
+                </Link>
+                , or create an account instantly and start accepting payments.
+                You can also contact us to design a custom package for your
+                business.
               </p>
               <div className="flex items-center ">
                 <Button
@@ -33,7 +41,8 @@ const GetStartedSection = () => {
             </div>
             <div className="-mt-0 sm:-mt-8">
               <KnowWhatYouPayIcon />
-              <h2 className="font-semibold mb-2 sm:mb-4 -mt-4">
+              <h2 className="relative font-semibold mb-2 sm:mb-4 -mt-4">
+                <span className="top-0 -left-2 sm:-left-4 lg:-left-3 absolute border-l h-full border-blue-600"></span>
                 Always know what you pay
               </h2>
               <p className="text-gray-700 mb-2 sm:mb-4 w-full xl:w-4/5 ">
@@ -47,7 +56,8 @@ const GetStartedSection = () => {
             </div>
             <div className="-mt-0 sm:-mt-8">
               <StartIntegrationIcon />
-              <h2 className="font-semibold mb-2 sm:mb-4 -mt-4">
+              <h2 className="relative font-semibold mb-2 sm:mb-4 -mt-4">
+                <span className="top-0 -left-2 sm:-left-4 md:-left-3 lg:-left-2.5 absolute border-l h-full border-blue-600"></span>
                 Start your integration
               </h2>
               <p className="text-gray-700 mb-2 sm:mb-4 w-full xl:w-11/12">

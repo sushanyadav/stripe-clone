@@ -2,70 +2,78 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
 
-import useMediaQuery from "hooks/useMediaQuery";
+import DropDown, {
+  ProductsDropdown,
+  UseCasesDropdown,
+  DevelopersDropdown,
+  CompanyDropdown,
+} from "./DropDown";
 
-import DropDown from "./DropDown";
-import ProductsDropdown from "./DropDown/ProductsDropdown";
-
-const DropDownNavItem = ({
-  name,
-  DropDownComponent,
-  trianglePosLeft,
-  wrapperAdditionalClassName,
-}) => {
+const NavItem = ({ name, DropDownComponent, wrapperAdditionalClassName }) => {
   const [itemHover, setItemHover] = useState(false);
 
   return (
-    <li
-      className={` p-5 font-semibold ${
-        itemHover ? "text-gray-200" : "text-white"
-      }`}
+    <div
       onMouseOver={() => setItemHover(true)}
       onMouseLeave={() => setItemHover(false)}
     >
-      <span className="cursor-default">{name}</span>
+      <li
+        className={`p-5 font-semibold relative ${
+          itemHover ? "text-gray-200" : "text-white"
+        }`}
+      >
+        {itemHover && (
+          <div
+            style={{
+              width: "0",
+              height: "0",
+              borderLeft: "0.6rem solid transparent",
+              borderRight: "0.6em solid transparent",
+              borderBottom: "0.6rem solid #fff",
+              position: "absolute",
+              margin: "auto",
+              bottom: "0.1rem",
+              left: "50%",
+              transform: "translateX(-50%)",
+              zIndex: 5,
+            }}
+          ></div>
+        )}
+        <span className="cursor-default">{name}</span>
+      </li>
       {itemHover && (
-        <DropDown
-          trianglePosLeft={trianglePosLeft}
-          wrapperAdditionalClassName={wrapperAdditionalClassName}
-        >
+        <DropDown wrapperAdditionalClassName={wrapperAdditionalClassName}>
           <DropDownComponent />
         </DropDown>
       )}
-    </li>
+    </div>
   );
 };
 
 const DesktopNavBar = () => {
   const router = useRouter();
 
-  const isLargeDevice = useMediaQuery("(min-width: 1280px)"); // lg ( > tablet Pro )
-
   return (
     <ul className="hidden flex-grow md:flex justify-center text-md">
-      <DropDownNavItem
+      <NavItem
         name="Products"
         DropDownComponent={ProductsDropdown}
         wrapperAdditionalClassName="w-11/12 lg:w-8/12"
-        trianglePosLeft={isLargeDevice ? "8.5rem" : "6.5rem"}
       />
-      <DropDownNavItem
+      <NavItem
         name="Use cases"
-        trianglePosLeft={isLargeDevice ? "15.5rem" : "13.5rem"}
-        wrapperAdditionalClassName="w-11/12 lg:w-8/12"
-        DropDownComponent={ProductsDropdown}
+        wrapperAdditionalClassName="md:w-6/12 lg:w-4/12"
+        DropDownComponent={UseCasesDropdown}
       />
-      <DropDownNavItem
+      <NavItem
         name="Developers"
-        trianglePosLeft={isLargeDevice ? "22.5rem" : "20.5rem"}
-        wrapperAdditionalClassName="w-11/12 lg:w-8/12"
-        DropDownComponent={ProductsDropdown}
+        wrapperAdditionalClassName="w-8/12 lg:w-6/12"
+        DropDownComponent={DevelopersDropdown}
       />
-      <DropDownNavItem
+      <NavItem
         name="Company"
-        trianglePosLeft={isLargeDevice ? "30rem" : "28rem"}
-        wrapperAdditionalClassName="w-11/12 lg:w-8/12"
-        DropDownComponent={ProductsDropdown}
+        wrapperAdditionalClassName="md:w-8/12 lg:w-5/12"
+        DropDownComponent={CompanyDropdown}
       />
       <li
         className={` p-5 font-semibold ${

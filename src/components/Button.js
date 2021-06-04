@@ -8,6 +8,7 @@ const Button = ({
   text,
   linkTo,
   noPadding,
+  normalFont,
 }) => {
   const [buttonHovered, setButtonHovered] = useState(false);
   const bgClass = backgroundClass || "";
@@ -15,12 +16,13 @@ const Button = ({
   const additionalClassNames = classNames || "";
   const href = linkTo || "/";
   const noPaddingClass = noPadding ? "" : "py-2 px-4";
+  const fontClass = normalFont ? "font-normal" : "font-semibold";
 
   return (
     <Link href={href}>
       <a
         style={{ lineHeight: "16px" }}
-        className={`${bgClass} ${bgHoverClass} ${noPaddingClass} flex items-center self-start rounded-md lg:rounded-full text-white font-semibold ${additionalClassNames}`}
+        className={`${bgClass} ${bgHoverClass} ${noPaddingClass} ${fontClass} flex items-center self-start rounded-md lg:rounded-full text-white ${additionalClassNames}`}
         onMouseOver={() => setButtonHovered(true)}
         onMouseLeave={() => setButtonHovered(false)}
       >

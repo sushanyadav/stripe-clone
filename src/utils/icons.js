@@ -21,7 +21,7 @@ export const CloseIcon = () => {
       <span className="sr-only">Close menu</span>
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="h-6 w-6"
+        className="h-5 w-5 fill-current text-gray-400"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -63,7 +63,7 @@ export const PaymentsIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="w-8 h-8"
+      className="w-6 h-6 md:w-8 md:h-8"
       viewBox="0 0 40 40"
     >
       <path
@@ -110,7 +110,7 @@ export const TerminalIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="w-8 h-8"
+      className="w-6 h-6 md:w-8 md:h-8"
       viewBox="0 0 40 40"
     >
       <path
@@ -160,7 +160,7 @@ export const ConnectIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="w-8 h-8"
+      className="w-6 h-6 md:w-8 md:h-8"
       viewBox="0 0 40 40"
     >
       <path
@@ -209,7 +209,7 @@ export const BillingIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="w-8 h-8"
+      className="w-6 h-6 md:w-8 md:h-8"
       viewBox="0 0 40 40"
     >
       <path
@@ -256,7 +256,7 @@ export const InvoicingIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="w-8 h-8"
+      className="w-6 h-6 md:w-8 md:h-8"
       viewBox="0 0 40 40"
     >
       <path
@@ -303,7 +303,7 @@ export const CorporateCardIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="w-8 h-8"
+      className="w-6 h-6 md:w-8 md:h-8"
       viewBox="0 0 40 40"
     >
       <g clipPath="url(#product-icon-corporate-SiteMenu-card-a)">
@@ -355,7 +355,7 @@ export const CapitalIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="w-8 h-8"
+      className="w-6 h-6 md:w-8 md:h-8"
       viewBox="0 0 40 40"
     >
       <path
@@ -412,7 +412,7 @@ export const IssuingIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="w-8 h-8"
+      className="w-6 h-6 md:w-8 md:h-8"
       viewBox="0 0 40 40"
     >
       <path
@@ -461,7 +461,7 @@ export const TreasuryIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="w-8 h-8"
+      className="w-6 h-6 md:w-8 md:h-8"
       viewBox="0 0 40 40"
     >
       <path
@@ -510,7 +510,7 @@ export const RadarIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="w-8 h-8"
+      className="w-6 h-6 md:w-8 md:h-8"
       viewBox="0 0 40 40"
     >
       <path
@@ -557,7 +557,7 @@ export const SigmaIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="w-8 h-8"
+      className="w-6 h-6 md:w-8 md:h-8"
       viewBox="0 0 40 40"
     >
       <path
@@ -603,7 +603,7 @@ export const AtlasIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="w-8 h-8"
+      className="w-6 h-6 md:w-8 md:h-8"
       viewBox="0 0 40 40"
     >
       <g clipPath="url(#product-icon-atlas-SiteMenu-a)">
@@ -656,7 +656,7 @@ export const ClimateIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="w-8 h-8"
+      className="w-6 h-6 md:w-8 md:h-8"
       viewBox="0 0 40 40"
     >
       <path
@@ -708,6 +708,60 @@ export const ClimateIcon = () => {
         >
           <stop offset="0.13" stopColor="#00CB1B"></stop>
           <stop offset="1" stopColor="#00D924"></stop>
+        </linearGradient>
+      </defs>
+    </svg>
+  );
+};
+
+export const PayoutsIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="w-6 h-6 md:w-8 md:h-8"
+      fill="none"
+      viewBox="0 0 40 40"
+    >
+      <path
+        fill="#0073E6"
+        fillRule="evenodd"
+        d="M2 17h33a3 3 0 013 3v17a3 3 0 01-3 3H5a3 3 0 01-3-3V17z"
+        clipRule="evenodd"
+      ></path>
+      <path
+        fill="url(#product-icon-payouts-SiteMobileMenu-a)"
+        d="M17.77.36L3.03 11.08A2.5 2.5 0 002 13.1v24.02c0 .99.67 2.02 1.68 2.59-.5-1.1-.34-2.36.67-3.03L19.72 25.5a2.5 2.5 0 001.03-2.02V1.88A1.88 1.88 0 0017.77.36z"
+      ></path>
+      <path
+        fill="url(#product-icon-payouts-SiteMobileMenu-b)"
+        fillRule="evenodd"
+        d="M20.75 17v6.5c0 .8-.38 1.54-1.03 2.01L4.35 36.68c-1.01.67-1.17 1.92-.67 3.03v-.02a3.4 3.4 0 01-1.5-1.7A3 3 0 012 37V17h18.75z"
+        clipRule="evenodd"
+      ></path>
+      <defs>
+        <linearGradient
+          id="product-icon-payouts-SiteMobileMenu-a"
+          x1="11.38"
+          x2="11.38"
+          y1="2.61"
+          y2="23.3"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="#11EFE3"></stop>
+          <stop offset="0.33" stopColor="#15E8E2"></stop>
+          <stop offset="0.74" stopColor="#1FD3E0"></stop>
+          <stop offset="1" stopColor="#21CFE0"></stop>
+        </linearGradient>
+        <linearGradient
+          id="product-icon-payouts-SiteMobileMenu-b"
+          x1="2"
+          x2="22.91"
+          y1="25.91"
+          y2="25.91"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="#0073E6"></stop>
+          <stop offset="1" stopColor="#00299C"></stop>
         </linearGradient>
       </defs>
     </svg>
@@ -1394,6 +1448,283 @@ export const StartIntegrationIcon = () => {
           href="#codeFilesIconFront"
         ></use>
       </g>
+    </svg>
+  );
+};
+
+export const EcommerceIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      className="fill-current text-gray-500 group-hover:text-gray-900 mt-0 md:mt-1"
+      viewBox="0 0 16 16"
+    >
+      <path
+        fillRule="evenodd"
+        d="M5.43 6L5.1 7.22a3 3 0 005.8 1.56L11.64 6H15a1 1 0 010 2l-.9 7.11a1 1 0 01-1 .89H2.9a1 1 0 01-1-.89L1 8a1 1 0 110-2h4.43zM9.61.02l.97.26a.5.5 0 01.35.6L9.57 6l-.6 2.26a1 1 0 01-1.94-.52l2-7.45a.5.5 0 01.58-.27z"
+      ></path>
+    </svg>
+  );
+};
+
+export const SaaSIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      className="fill-current text-gray-500 group-hover:text-gray-900 mt-0 md:mt-1"
+      viewBox="0 0 15 15"
+    >
+      <path
+        fillRule="evenodd"
+        d="M1.88 0h11.25C14.15 0 15 .84 15 1.88v11.25c0 1.03-.84 1.87-1.88 1.87H1.88A1.88 1.88 0 010 13.12V1.88C0 .83.84 0 1.88 0zm8.97 4.22h.63a.7.7 0 000-1.4H8.2a.7.7 0 00-.7.7v2.34a.7.7 0 001.4 0V4.53a3.28 3.28 0 01.47 5.66v1.6a4.69 4.69 0 001.48-7.57zm-6.7 6.64h-.63a.7.7 0 000 1.4H6.8a.7.7 0 00.7-.7V9.22a.7.7 0 00-1.4 0v1.32a3.28 3.28 0 01-.47-5.65v-1.6a4.69 4.69 0 00-1.48 7.57z"
+      ></path>
+    </svg>
+  );
+};
+
+export const MarketPlaceIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      className="fill-current text-gray-500 group-hover:text-gray-900 mt-0 md:mt-1"
+      viewBox="0 0 16 16"
+    >
+      <path
+        fillRule="evenodd"
+        d="M13.57 7.65c-.71 0-1.4-.27-1.94-.74-.52.46-1.2.74-1.93.74s-1.42-.27-1.94-.74c-.54.46-1.23.74-1.94.74-.74 0-1.43-.27-1.95-.74a3.02 3.02 0 01-2.86.59 1.86 1.86 0 01-.49-.21v7.17c0 .32.28.6.6.6h7.55V9.8c0-.11.1-.2.2-.2h3.14c.11 0 .2.1.2.2v5.26h2.15c.33 0 .6-.28.6-.6V7.29c-.14.1-.3.16-.49.2-.27.1-.58.16-.9.16zM6.83 11.7c0 .12-.1.2-.2.2H3.51a.2.2 0 01-.2-.2V9.8c0-.12.1-.2.2-.2h3.1c.12 0 .2.1.2.2v1.9h.02zm8.31-8.32L13.04.42c-.2-.26-.5-.42-.82-.42h-8.9a1 1 0 00-.82.42L.38 3.38c-.25.34-.38.77-.38 1.2 0 .86.5 1.7 1.32 1.94.92.28 1.78-.1 2.24-.79.15-.22.47-.22.64 0 .34.53.95.89 1.62.89a1.9 1.9 0 001.61-.89c.15-.22.48-.22.64 0 .34.53.95.89 1.62.89a1.9 1.9 0 001.61-.89c.15-.22.48-.22.64 0 .44.69 1.3 1.07 2.24.79.82-.25 1.32-1.1 1.32-1.95.02-.42-.11-.83-.36-1.19z"
+      ></path>
+    </svg>
+  );
+};
+
+export const PlatFormIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      className="fill-current text-gray-500 group-hover:text-gray-900 mt-0 md:mt-1"
+      viewBox="0 0 14 16"
+    >
+      <path d="M6.98 0a.52.52 0 00-.25.08L.24 4.03a.5.5 0 00-.24.43c0 .17.1.33.24.42l6.49 3.95c.17.1.37.1.54 0l6.49-3.95a.5.5 0 00.24-.42.5.5 0 00-.24-.43L7.27.08a.52.52 0 00-.3-.08zm-5.5 6.82l-1.24.76A.5.5 0 000 8c0 .17.1.33.24.42l6.49 3.96c.17.1.37.1.54 0l6.49-3.96A.5.5 0 0014 8a.5.5 0 00-.24-.42l-1.25-.76-4.7 2.86a1.58 1.58 0 01-1.62 0l-4.7-2.86zm0 3.54l-1.24.76a.5.5 0 00-.24.43c0 .17.1.33.24.42l6.49 3.95c.17.1.37.1.54 0l6.49-3.95a.5.5 0 00.24-.42.5.5 0 00-.24-.43l-1.25-.76-4.7 2.87a1.58 1.58 0 01-1.62 0l-4.7-2.87z"></path>
+    </svg>
+  );
+};
+
+export const DocumentationIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      className="fill-current text-gray-500 group-hover:text-gray-900 mt-0 md:mt-1"
+      viewBox="0 0 16 16"
+    >
+      <path
+        fillRule="evenodd"
+        d="M4.04 2c1.91 0 3.46.9 3.46 2.55V15c-.45 0-.9-.3-1.17-.53-.86-.71-2.52-.75-4.31-.75H.83a.82.82 0 01-.59-.25.86.86 0 01-.24-.6V2.85C0 2.38.37 2 .83 2h3.2zm11.13 0c.22 0 .43.1.59.25.15.16.24.38.24.6v10.02c0 .23-.09.44-.24.6a.82.82 0 01-.6.25h-1.18c-1.8 0-3.45.04-4.3.75-.28.23-.73.53-1.18.53V4.55C8.5 2.91 10.05 2 11.96 2h3.2z"
+      ></path>
+    </svg>
+  );
+};
+
+export const APIReferenceIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      className="mt-0 md:mt-1"
+      viewBox="0 0 16 16"
+    >
+      <path
+        fill="none"
+        fillRule="evenodd"
+        stroke="rgba(107, 114, 128)"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        d="M1 14.5h14m-14-4h14m-14-4h14m-14-4h14"
+      ></path>
+    </svg>
+  );
+};
+
+export const APIStatus = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      className="mt-0 md:mt-1"
+      viewBox="0 0 16 16"
+    >
+      <path
+        fill="none"
+        fillRule="evenodd"
+        stroke="rgba(107, 114, 128)"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        d="M1 8.07h2.75L6.55 2l2.8 11.2 2.8-5.09L15 8.07"
+      ></path>
+    </svg>
+  );
+};
+
+export const SupportIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      className="fill-current text-gray-500 group-hover:text-gray-900 mt-0 md:mt-1"
+      viewBox="0 0 16 16"
+    >
+      <g>
+        <path d="M8.9 13.48a5.35 5.35 0 01-6.19.5l-2.48.82c-.18.06-.27-.03-.21-.2l.83-2.5A5.37 5.37 0 015.16 4a6.21 6.21 0 003.74 9.48z"></path>
+        <path d="M14.98 10.12a5.37 5.37 0 10-1.86 1.86l2.48.83c.18.06.27-.03.21-.2l-.83-2.5z"></path>
+      </g>
+    </svg>
+  );
+};
+
+export const APIChangelogIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      className="fill-current text-gray-500 group-hover:text-gray-900 mt-0 md:mt-1"
+      viewBox="0 0 16 16"
+    >
+      <path d="M8 16A8 8 0 118 0a8 8 0 010 16zM6.58 5.72a.64.64 0 00-.92-.91L2.93 7.54a.64.64 0 000 .91l2.73 2.73a.64.64 0 00.92-.91L4.3 7.99l2.28-2.27zm6.58 1.84l-2.73-2.74a.64.64 0 00-.91.91l2.27 2.28-2.27 2.28a.64.64 0 00.9.9l2.74-2.73a.64.64 0 000-.9z"></path>
+    </svg>
+  );
+};
+
+export const AboutStripeIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      className="fill-current text-gray-500 group-hover:text-gray-900 mt-0 md:mt-1"
+      viewBox="0 0 16 16"
+    >
+      <path d="M8 16A8 8 0 118 0a8 8 0 010 16zm.17-10.25c.71 0 1.62.26 2.34.65V4.18a6.28 6.28 0 00-2.34-.47c-1.9 0-3.21 1-3.21 2.66 0 2.61 3.58 2.19 3.58 3.3 0 .44-.35.59-.88.59-.78 0-1.76-.35-2.55-.78v2.25c.88.37 1.74.56 2.55.56 1.96 0 3.28-.97 3.28-2.67 0-2.8-3.6-2.3-3.6-3.36 0-.36.33-.5.83-.5z"></path>
+    </svg>
+  );
+};
+export const CustomersIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      className="fill-current text-gray-500 group-hover:text-gray-900 mt-0 md:mt-1"
+      viewBox="0 0 16 16"
+    >
+      <path d="M12 0a2.5 2.5 0 012.45 2H15a1 1 0 011 1v12a1 1 0 01-1 1h-2v-4h-2v4H9a1 1 0 01-1-1V3a1 1 0 011-1h.55A2.5 2.5 0 0112 0zM3.5 4A3.5 3.5 0 017 7.5V15a1 1 0 01-1 1H1a1 1 0 01-1-1V7.5A3.5 3.5 0 013.5 4zm0 2a1.5 1.5 0 100 3 1.5 1.5 0 000-3z"></path>
+    </svg>
+  );
+};
+export const EnterpriseIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      className="fill-current text-gray-500 group-hover:text-gray-900 mt-0 md:mt-1"
+      viewBox="0 0 16 16"
+    >
+      <path d="M8 0a8 8 0 110 16A8 8 0 018 0zm.02 1A7.04 7.04 0 002 4.37l.9-.32c.08-.03.16 0 .2.07l.17.25a.17.17 0 00.27 0l.7-.82.13-.25a.16.16 0 00-.08-.19l-.15-.1a.15.15 0 010-.24l.79-.5.27.14-.34.5L6 2.47a.17.17 0 01.16 0l.34.24-1.3.54a.14.14 0 00-.07.09l-.22.32a.16.16 0 000 .22c.06.06.16.07.22 0l.49-.17h.07l.56.06c.03.02.08.02.11 0l.96-.71a.15.15 0 000-.22l-.53-.82a.16.16 0 010-.19.16.16 0 01.18-.06l1.47-.24h.1l1 .5c.04.02.07.04.1.08l.1.27a.16.16 0 01-.12.2l-.7.11.5.33c.07.04.08.14.04.2l-.53.75a.17.17 0 01-.17.07l-.74-.11a.18.18 0 00-.13 0l-.96.7a.15.15 0 00-.05.18l.15.36c.03.07 0 .14-.06.18l-.19.17a.17.17 0 01-.24-.07l-.15-.34a.17.17 0 00-.26-.06l-.46.37a.16.16 0 00-.06.14l.1.66a.16.16 0 01-.15.18H5.3a.17.17 0 00-.18.1l-.2.96c0 .04-.03.1-.07.12L3.8 8.4a.14.14 0 00-.06.1l-.28 1.04a.14.14 0 000 .12l.83 1c.03.04.07.06.11.06l1.65.24c.06 0 .11.05.14.1l.58 1.33c.02.04.02.09 0 .12l-.18.45a.16.16 0 000 .16l.83.83c.04.04.1.06.17.05l1.65-.4a.16.16 0 00.12-.16v-.32c0-.05.04-.1.09-.13l.49-.25a.16.16 0 00.08-.14v-.92l.93-1.21a.16.16 0 00.01-.2.16.16 0 00-.18-.05l-.42.1a.17.17 0 01-.18-.05L8.94 8.75l.24-.14a.17.17 0 01.21 0l1.03 1.03c.06.06.16.06.23 0l.63-.54a.16.16 0 000-.24l-.72-.59.08-.23.83.28h.1l.64-.2a.18.18 0 01.13 0l.5.26c.04.02.07.05.08.09l.3.82c.03.08.12.12.2.1l.25-.06a.16.16 0 00.11-.19l-.21-.75V8.3l.26-.93a.17.17 0 01.22-.08l.25.08c.24.12.47.24.7.38A7.01 7.01 0 008.02 1zm-.54 5.36c.05.01.1.05.12.1l.47.82a.2.2 0 00.14.09l.94.08c.1 0 .17.09.17.18l.04.34a.18.18 0 01-.2.16l-1.2-.1a.13.13 0 00-.13.05l-.14.18a.16.16 0 01-.18.04l-1.06-.05A.18.18 0 016.3 8l.2-.42a.18.18 0 00-.16-.25h-.45a.17.17 0 11-.08-.32l.73-.45a.2.2 0 01.24.02l.37.5c.02.04.02.09 0 .13l-.04.37h.3c.05 0 .1-.04.13-.09a.17.17 0 000-.16l-.47-.97h.42zm1.68-.08l.4.2a.17.17 0 01-.06.33l-.48.06a.18.18 0 01-.17-.05.18.18 0 01-.04-.17l.08-.26a.19.19 0 01.27-.11z"></path>
+    </svg>
+  );
+};
+export const RegisterSessionIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      className="fill-current text-gray-500 group-hover:text-gray-900 mt-0 md:mt-1"
+      viewBox="0 0 16 16"
+    >
+      <path d="M8 16A8 8 0 118 0a8 8 0 010 16zM6.58 5.72a.64.64 0 00-.92-.91L2.93 7.54a.64.64 0 000 .91l2.73 2.73a.64.64 0 00.92-.91L4.3 7.99l2.28-2.27zm6.58 1.84l-2.73-2.74a.64.64 0 00-.91.91l2.27 2.28-2.27 2.28a.64.64 0 00.9.9l2.74-2.73a.64.64 0 000-.9z"></path>
+    </svg>
+  );
+};
+export const JobsIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      className="fill-current text-gray-500 group-hover:text-gray-900 mt-0 md:mt-1"
+      viewBox="0 0 16 16"
+    >
+      <path d="M10.5 3.5a1 1 0 00-1-1h-3a1 1 0 00-1 1V4H4v-.5A2.5 2.5 0 016.5 1h3A2.5 2.5 0 0112 3.5V4h2.5c.83 0 1.5.67 1.5 1.5v8c0 .83-.67 1.5-1.5 1.5h-13A1.5 1.5 0 010 13.5v-8C0 4.67.67 4 1.5 4h9v-.5z"></path>
+    </svg>
+  );
+};
+export const NewsroomIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      className="fill-current text-gray-500 group-hover:text-gray-900 mt-0 md:mt-1"
+      viewBox="0 0 16 16"
+    >
+      <path d="M0 13V5a1 1 0 011-1h1v9a.5.5 0 101 0V3a1 1 0 011-1h11a1 1 0 011 1v9a3 3 0 01-3 3H2a2 2 0 01-2-2zm14-3H5v1h9v-1zm0-6h-4v4h4V4zM8 7H5v1h3V7zm0-3H5v1h3V4z"></path>
+    </svg>
+  );
+};
+export const PartnersIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      className="fill-current text-gray-500 group-hover:text-gray-900 mt-0 md:mt-1"
+      viewBox="0 0 16 16"
+    >
+      <path d="M15.8 1.96c.12.17.19.37.2.58v8.52c-.02.42-.26.8-.64.97l-6.9 3.2c-.3.13-.63.13-.92 0l-6.9-3.2a1.1 1.1 0 01-.64-.97V2.54c0-.2.07-.41.2-.58L8 5.56l7.8-3.6zM4.37 0C4.75.82 6.23 1.43 8 1.43c1.77 0 3.24-.61 3.63-1.43h.1v1.23c0 1.01-1.67 1.84-3.73 1.84-2.07 0-3.74-.83-3.74-1.84V0h.1z"></path>
+    </svg>
+  );
+};
+
+export const BlogIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      className="fill-current text-gray-500 group-hover:text-gray-900 mt-0 md:mt-1"
+      viewBox="0 0 16 16"
+    >
+      <path d="M12 14.2a1 1 0 010 2H4a1 1 0 010-2h8zM8.5 0L13 7.2l-1.71 6H4.7L3 7.2 7.5 0v6.29a1.5 1.5 0 101 0V0z"></path>
+    </svg>
+  );
+};
+
+export const PricingIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      className="fill-current text-gray-500 group-hover:text-gray-900 mt-0 md:mt-1"
+      viewBox="0 0 16 16"
+    >
+      <path d="M7.68.59l8.03 8.04a1 1 0 010 1.42l-5.68 5.66a1 1 0 01-1.42 0L.58 7.66A1.99 1.99 0 010 6.26V2C0 .9.9 0 2 0h4.27a2 2 0 011.41.59zM3.5 5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path>
     </svg>
   );
 };
