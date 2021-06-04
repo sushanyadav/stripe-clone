@@ -52,7 +52,7 @@ const Code = ({ codeString, hasHeading, noLineNumbers, topRounded, dark }) => {
                   className="flex gap-6"
                 >
                   {!noLineNumbers && (
-                    <span className="opacity-20" style={{ userSelect: "none" }}>
+                    <span className="opacity-20 select-none">
                       {line.length === 1 && line[0].empty ? "~" : i + 1}
                     </span>
                   )}

@@ -111,7 +111,7 @@ const FooterNavItems = ({
             <button
               ref={countriesDomNode}
               onClick={handleShowCountries}
-              className=" flex items-center text-left focus:outline-none -mt-2 mb-1"
+              className=" flex items-center hover:opacity-50 text-left focus:outline-none -mt-2 mb-1"
             >
               <svg width="16" height="16" className="mr-2" viewBox="0 0 16 16">
                 <path
@@ -126,7 +126,7 @@ const FooterNavItems = ({
             <button
               ref={languageDomNode}
               onClick={setShowLanguage}
-              className="flex items-center focus:outline-none text-left"
+              className="flex items-center hover:opacity-50 focus:outline-none text-left"
             >
               <svg width="16" height="16" className="mr-2" viewBox="0 0 16 16">
                 <path
@@ -138,7 +138,7 @@ const FooterNavItems = ({
               {selectedLanguage}
             </button>
           </div>
-          <span className="mt-4">© Stripe</span>
+          <span className="mt-4 select-none">© Stripe</span>
         </div>
 
         {navItems.map((navItem) => {

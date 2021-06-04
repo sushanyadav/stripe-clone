@@ -28,7 +28,7 @@ const LanguageList = ({ setSelectedLanguage, setShowLanguage }) => {
           {languages.map((lang) => (
             <li
               key={lang}
-              className="cursor-pointer"
+              className="cursor-pointer hover:opacity-60"
               onClick={() => langClickHandler(lang)}
             >
               {lang}

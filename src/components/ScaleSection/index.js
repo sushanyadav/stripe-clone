@@ -35,7 +35,7 @@ const ScaleSection = () => {
                   the internet. Our teams are based in dozens of offices around
                   the world, and we process hundreds of billions of dollars each
                   year for{" "}
-                  <Link href="">
+                  <Link href="#">
                     <a className="text-blue-400 hover:text-blue-600">
                       startups to Fortune 500s
                     </a>

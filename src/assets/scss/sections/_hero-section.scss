@@ -44,10 +44,11 @@
 .heading-secondary {
   width: 100%;
 
-  @include min-break-point(tablet) {
-    width: 90%;
-  }
   @include min-break-point(large-desktop) {
+    width: 100%;
+  }
+
+  @include min-break-point(extra-large-desktop) {
     width: 70%;
   }
 }
@@ -57,26 +58,6 @@
 
   @include min-break-point(tablet) {
     min-width: 70%;
-  }
-}
-
-.hero-img {
-  @include min-break-point(tablet) {
-    max-height: 30rem;
-    max-width: 16rem;
-  }
-
-  @include min-break-point(tablet-landscape) {
-    max-height: 28rem;
-    max-width: 100%;
-  }
-
-  @include min-break-point(large-desktop) {
-    max-height: 30rem;
-  }
-
-  @include min-break-point(extra-large-desktop) {
-    max-height: 37rem;
   }
 }
 

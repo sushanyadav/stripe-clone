@@ -5,7 +5,7 @@ import DashedLines from "components/DashedLines";
 const HomeHeroSection = () => {
   return (
     <HeroSection opacityClass="opacity-60">
-      <div className="mt-14 outer-container">
+      <div className="mt-14 outer-container" style={{ maxWidth: "2280px" }}>
         <div className="container">
           <div className="relative ">
             <DashedLines />
@@ -40,10 +40,10 @@ const HomeHeroSection = () => {
               </div>
 
               <img
-                style={{ width: "30rem" }}
+                style={{ width: "70%" }}
                 src="/images/phone-img.png"
                 alt="hero-image"
-                className="relative z-20"
+                className="relative z-20 -ml-0 hidden md:block lg:-ml-8"
               />
             </div>
           </div>
