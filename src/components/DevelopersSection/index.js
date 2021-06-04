@@ -33,12 +33,25 @@ currency: 'usd'
 `;
 
   return (
-    <div className="relative">
-      <div className="bg-gray-900 -mt-28 sm:-mt-72 relative z-20 developer-section-wrapper">
-        <div className="container">
-          <div className="relative py-36 lg:py-72">
-            <DashedLines darkerBorderlines />
-            <div className="grid sm:grid-cols-2 px-2 sm:px-4 text-gray-50 py-20">
+    <>
+      <div
+        className="bg-gray-900 sm:-mt-64 relative z-20"
+        style={{
+          transform: "skewY(-6deg)",
+          transformOrigin: "100% 0",
+        }}
+      >
+        <div
+          className="container "
+          style={{
+            transform: "skewY(6deg)",
+            transformOrigin: "100% 0",
+          }}
+        >
+          <div className="relative pb-20 pt-44 md:pb-24 md:pt-56 ">
+            <DashedLines opacity="opacity-10" />
+
+            <div className="grid sm:grid-cols-2 px-2 sm:px-4 text-gray-50">
               <div className="mb-16 sm:mb-0 sm:mr-4">
                 <h2 className="text-lg  text-blue-400 mb-8 font-semibold">
                   Designed for developers
@@ -100,11 +113,29 @@ currency: 'usd'
           </div>
         </div>
       </div>
-      <div className="absolute bottom-12 md:bottom-14 lg:bottom-48 right-0 flex flex-col items-center">
-        <div className="primary-stripe-line h-24 opacity-80 " />
-        <div className=" relative z-10 secondary-stripe-line h-10 md:h-16 -mt-9 md:-mt-12 lg:-mt-14 opacity-60" />
+      <div
+        className="relative z-10 h-10 sm:h-16 w-full"
+        style={{
+          transform: "skewY(-6deg)",
+          transformOrigin: "100% 0",
+        }}
+      >
+        <div
+          className="absolute top-0 right-0 h-full flex flex-col items-center"
+          style={{ width: "18.5%", minWidth: "8rem" }}
+        >
+          <div
+            style={{ backgroundColor: "#80e9ff" }}
+            className="h-full w-full"
+          ></div>
+
+          <div
+            style={{ backgroundColor: "#0048e5" }}
+            className="h-full  w-1/2 -mt-2 opacity-60"
+          ></div>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

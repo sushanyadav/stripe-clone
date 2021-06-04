@@ -103,8 +103,11 @@ const FooterNavItems = ({
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
         <div className="col-span-2 md:col-span-1 flex flex-col items-start justify-between">
           <div>
-            <Logo dark className="-mt-4" />
-
+            <Link href="#">
+              <a>
+                <Logo dark className="-mt-4 hover:opacity-50 cursor-pointer" />
+              </a>
+            </Link>
             <button
               ref={countriesDomNode}
               onClick={handleShowCountries}

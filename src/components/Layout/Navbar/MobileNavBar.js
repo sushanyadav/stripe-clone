@@ -3,6 +3,8 @@ import Link from "next/link";
 
 import Button from "components/Button";
 
+import useOutsideAlerter from "hooks/useOutsideAlerter";
+
 import {
   CloseIcon,
   PayoutsIcon,
@@ -105,9 +107,11 @@ const MobileNavBar = ({ closeMenu }) => {
     },
   ];
 
+  const countriesDomNode = useOutsideAlerter(closeMenu);
+
   return (
     <>
-      <div className="bg-white rounded-lg shadow-lg">
+      <div ref={countriesDomNode} className="bg-white rounded-lg shadow-lg">
         <div className="space-y-4">
           <div className="p-6">
             <div className="flex items-center justify-between mb-4">

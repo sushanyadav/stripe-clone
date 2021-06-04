@@ -40,9 +40,9 @@ const CountriesList = ({ selectedCountry, setSelectedCountry }) => {
     { pos: "-444px -35px", name: "Spain" },
     { pos: "-196px -160px", name: "Sweden" },
     { pos: "-475px -10px", name: "Switzerland" },
-    { pos: "-41px -10px", name: "United Arab Emirates" },
-    { pos: "-103px -60px", name: "United Kingdom" },
     { pos: "-227px -185px", name: "United States" },
+    { pos: "-103px -60px", name: "United Kingdom" },
+    { pos: "-41px -10px", name: "United Arab Emirates" },
   ];
 
   return (
@@ -56,7 +56,10 @@ const CountriesList = ({ selectedCountry, setSelectedCountry }) => {
           classNames="text-gray-700 py-2 hover:text-gray-900 mb-4"
           noPadding
         />
-        <ul className="space-y-3 country-lists">
+        <ul
+          className="md:grid sm:block space-y-2 md:space-y-0 mb-2 md:mb-0 md:grid-cols-3 gap-3"
+          style={{ columnCount: "2" }}
+        >
           {countries.map(({ pos, name }) => {
             return (
               <li
@@ -68,7 +71,7 @@ const CountriesList = ({ selectedCountry, setSelectedCountry }) => {
                   <svg
                     width="16"
                     height="16"
-                    className="fill-current text-gray-700 mt-0.5"
+                    className="fill-current text-gray-700 "
                     viewBox="0 0 16 16"
                   >
                     <path

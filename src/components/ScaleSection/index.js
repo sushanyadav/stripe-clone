@@ -4,11 +4,23 @@ import Link from "next/link";
 
 const ScaleSection = () => {
   return (
-    <div className="relative">
-      <div className="bg-gray-900 -mt-28 sm:-mt-56 relative z-20 scale-section-wrapper">
-        <div className="container">
-          <div className="relative pt-36 pb-4 lg:pt-56 lg:pb-16">
-            <DashedLines darkerBorderlines />
+    <div className="overflow-y-hidden">
+      <div
+        className="bg-gray-900 relative z-20"
+        style={{
+          transform: "skewY(-6deg)",
+          transformOrigin: "100% 0",
+        }}
+      >
+        <div
+          className="container "
+          style={{
+            transform: "skewY(6deg)",
+            transformOrigin: "100% 0",
+          }}
+        >
+          <div className="relative pt-28 md:pt-40 pb-10 md:pb-14 ">
+            <DashedLines opacity="opacity-10" />
             <div className=" px-2 sm:px-4 text-gray-50 py-20">
               <div className="mb-16 sm:mb-0 sm:mr-4">
                 <h2 className="text-lg  text-blue-400 mb-8 font-semibold">
@@ -73,10 +85,6 @@ const ScaleSection = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="absolute top-6 md:top-10 lg:top-32 xl:top-28 left-0 flex flex-col items-center">
-        <div className="secondary-stripe-line-reverse  h-16 sm:h-24 opacity-80 " />
-        <div className=" relative z-10 primary-stripe-line-reverse h-10 md:h-12 lg:h-16 -mt-20 sm:-mt-28 opacity-60" />
       </div>
     </div>
   );

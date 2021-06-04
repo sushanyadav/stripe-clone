@@ -89,11 +89,11 @@ const PaymentSection = () => {
                 />
               </div>
               <div className="g-pay-image-wrapper row-span-2 ml-4 sm:ml-0">
-                <img className="-mt-2 ml-4" src="/images/g-pay.png" />
+                <img className="-mt-2 ml-4 2xl:ml-8" src="/images/g-pay.png" />
               </div>
               <div className="card-image-wrapper">
                 <img
-                  className="-ml-0 sm:-ml-6 md:-ml-9"
+                  className="-ml-0 sm:-ml-6 md:-ml-7"
                   src="/images/card.png"
                 />
               </div>

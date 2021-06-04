@@ -1,14 +1,3 @@
-.developer-section-wrapper {
-  clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
-
-  @include min-break-point(tablet) {
-    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
-  }
-  @include min-break-point(large-desktop) {
-    clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0% 100%);
-  }
-}
-
 .code {
   -ms-overflow-style: none; /* Internet Explorer 10+ */
   scrollbar-width: none; /* Firefox */
@@ -31,33 +20,5 @@
     border-bottom: 14px solid transparent;
     top: 0;
     right: -0.89rem;
-  }
-}
-
-.primary-stripe-line {
-  width: 30vw;
-  background-color: #80e9ff;
-  clip-path: polygon(0 40%, 100% 0%, 100% 65%, 0% 100%);
-
-  @include min-break-point(tablet) {
-    clip-path: polygon(0 60%, 100% 0%, 100% 60%, 0% 100%);
-  }
-  @include min-break-point(large-desktop) {
-    clip-path: polygon(0 60%, 100% 0%, 100% 40%, 0% 100%);
-    width: 20vw;
-  }
-}
-
-.secondary-stripe-line {
-  width: 20vw;
-  background-color: #0048e5;
-  clip-path: polygon(0 45%, 100% 0%, 100% 54%, 0% 100%);
-
-  @include min-break-point(tablet) {
-    clip-path: polygon(0 40%, 100% 0%, 100% 58%, 0% 100%);
-  }
-  @include min-break-point(large-desktop) {
-    clip-path: polygon(0 45%, 100% 0%, 100% 55%, 0% 100%);
-    width: 10vw;
   }
 }
