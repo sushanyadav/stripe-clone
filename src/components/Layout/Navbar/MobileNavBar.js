@@ -23,7 +23,7 @@ import {
   financialList,
   businessList,
 } from "./DropDown/ProductsDropdown";
-import { useCaseItems } from "./DropDown/UseCasesDropDown";
+import { useCaseItems } from "./DropDown/UseCasesDropdown";
 import SingleItem from "./DropDown/SingleItem";
 
 const MobileNavBar = ({ closeMenu }) => {
