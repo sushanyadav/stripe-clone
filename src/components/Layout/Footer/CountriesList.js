@@ -65,7 +65,7 @@ const CountriesList = ({ selectedCountry, setSelectedCountry }) => {
               <li
                 key={name}
                 onClick={() => setSelectedCountry(name)}
-                className="flex gap-2 text-gray-700 hover:text-black text-sm font-medium cursor-pointer"
+                className="flex gap-2 text-gray-800 hover:opacity-60 text-sm font-medium cursor-pointer"
               >
                 {name === selectedCountry ? (
                   <svg

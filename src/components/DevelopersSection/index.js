@@ -35,7 +35,7 @@ currency: 'usd'
   return (
     <>
       <div
-        className="bg-gray-900 sm:-mt-64 relative z-20"
+        className="bg-gray-900 -mt-20 sm:-mt-64 relative z-20"
         style={{
           transform: "skewY(-6deg)",
           transformOrigin: "100% 0",
