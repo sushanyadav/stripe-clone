@@ -1,6 +1,12 @@
 import Button from "components/Button";
 
-const CountriesList = ({ selectedCountry, setSelectedCountry }) => {
+const CountriesList = ({
+  handleCurrentCountry,
+  setPopperElement,
+  attributes,
+  styles,
+  currentCountry,
+}) => {
   const countries = [
     { pos: "-196px -10px", name: "Australia" },
     { pos: "-165px -10px", name: "Austria" },
@@ -47,10 +53,12 @@ const CountriesList = ({ selectedCountry, setSelectedCountry }) => {
 
   return (
     <div
-      // className="absolute bottom-0 left-10 right-4 max-w-lg"
-      className="absolute bottom-6 sm:bottom-12 lg:bottom-6 xl:bottom-10 2xl:bottom-8 left-10 right-4 max-w-lg"
+      ref={setPopperElement}
+      style={{ ...styles.popper, bottom: "0.3rem" }}
+      {...attributes.popper}
+      className="z-50  w-10/12 sm:w-full max-w-lg"
     >
-      <div className="bg-white p-8 rounded-t-lg shadow-xl">
+      <div className="bg-white p-8 rounded-t-lg shadow-2xl border-gray-50 border">
         <Button
           text="Sign up instantly"
           classNames="text-gray-700 py-2 hover:text-gray-900 mb-4"
@@ -64,10 +72,10 @@ const CountriesList = ({ selectedCountry, setSelectedCountry }) => {
             return (
               <li
                 key={name}
-                onClick={() => setSelectedCountry(name)}
+                onClick={() => handleCurrentCountry(name)}
                 className="flex gap-2 text-gray-800 hover:opacity-60 text-sm font-medium cursor-pointer"
               >
-                {name === selectedCountry ? (
+                {name === currentCountry ? (
                   <svg
                     width="16"
                     height="16"
