@@ -4,9 +4,31 @@ import Link from "next/link";
 
 const ScaleSection = () => {
   return (
-    <div className="overflow-y-hidden">
+    <div className="overflow-hidden mx-auto" style={{ maxWidth: "3280px" }}>
       <div
-        className="bg-gray-900 relative z-20"
+        className="relative z-10 h-10 sm:h-16 w-full"
+        style={{
+          transform: "skewY(-6deg)",
+          transformOrigin: "100% 0",
+        }}
+      >
+        <div
+          className="absolute top-0 left-0 h-full flex flex-col items-center"
+          style={{ width: "18.5%", minWidth: "8rem" }}
+        >
+          <div
+            style={{ backgroundColor: "#80e9ff" }}
+            className=" h-full w-1/2 -mb-2 opacity-80"
+          ></div>
+
+          <div
+            style={{ backgroundColor: "#0048e5" }}
+            className="h-full w-full opacity-70"
+          ></div>
+        </div>
+      </div>
+      <div
+        className="bg-dark relative z-20 flex items-center justify-center"
         style={{
           transform: "skewY(-6deg)",
           transformOrigin: "100% 0",
@@ -19,11 +41,11 @@ const ScaleSection = () => {
             transformOrigin: "100% 0",
           }}
         >
-          <div className="relative pt-28 md:pt-40 pb-10 md:pb-14 ">
-            <DashedLines opacity="opacity-10" />
+          <div className="relative pt-28 md:pt-40 pb-10 md:pb-14 2xl:pb-24 ">
+            <DashedLines opacity="opacity-5" />
             <div className=" px-2 sm:px-4 text-gray-50 py-20">
               <div className="mb-16 sm:mb-0 sm:mr-4">
-                <h2 className="text-lg  text-blue-400 mb-8 font-semibold">
+                <h2 className="text-lg  text-accent mb-8 font-semibold">
                   Global scale
                 </h2>
                 <h1 className="text-4xl w-full md:w-2/3 lg:w-1/3 font-semibold">
@@ -36,7 +58,7 @@ const ScaleSection = () => {
                   the world, and we process hundreds of billions of dollars each
                   year for{" "}
                   <Link href="#">
-                    <a className="text-blue-400 hover:text-blue-600">
+                    <a className="text-accent font-medium hover:text-gray-900">
                       startups to Fortune 500s
                     </a>
                   </Link>
@@ -45,7 +67,7 @@ const ScaleSection = () => {
                 <div className="mt-12 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-16">
                   <div>
                     <h2 className="text-2xl relative">
-                      <span className="top-0 -left-2 sm:-left-4 absolute border-l h-full border-blue-600"></span>
+                      <span className="top-0 -left-2 sm:-left-4 absolute border-l h-full border-accent"></span>
                       250M+
                     </h2>
                     <p className="mt-2 text-gray-400">
@@ -54,7 +76,7 @@ const ScaleSection = () => {
                   </div>
                   <div>
                     <h2 className="text-2xl relative">
-                      <span className="top-0 -left-2 sm:-left-4 md:-left-6 lg:-left-5 absolute border-l h-full border-blue-600"></span>
+                      <span className="top-0 -left-2 sm:-left-4 md:-left-6 lg:-left-5 absolute border-l h-full border-accent"></span>
                       90%
                     </h2>
                     <p className="mt-2 text-gray-400">
@@ -63,7 +85,7 @@ const ScaleSection = () => {
                   </div>
                   <div>
                     <h2 className="text-2xl relative">
-                      <span className="top-0 -left-2 sm:-left-4 lg:-left-6 absolute border-l h-full border-blue-600"></span>
+                      <span className="top-0 -left-2 sm:-left-4 lg:-left-6 absolute border-l h-full border-accent"></span>
                       135+
                     </h2>
                     <p className="mt-2 text-gray-400">
@@ -72,7 +94,7 @@ const ScaleSection = () => {
                   </div>
                   <div>
                     <h2 className="text-2xl relative">
-                      <span className="top-0 -left-2 sm:-left-4 md:-left-6 lg:-left-7 absolute border-l h-full border-blue-600"></span>
+                      <span className="top-0 -left-2 sm:-left-4 md:-left-6 lg:-left-7 absolute border-l h-full border-accent"></span>
                       35+
                     </h2>
                     <p className="mt-2 text-gray-400">

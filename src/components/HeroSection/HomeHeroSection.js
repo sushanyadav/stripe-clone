@@ -13,11 +13,17 @@ const HomeHeroSection = () => {
               <div className="px-2 sm:px-4 heading">
                 <div className="flex items-center">
                   <Button
-                    backgroundClass="bg-gray-500"
-                    text="Register now • Sessions, our virtual conference, starts on
-                  16th June"
-                    classNames="relative z-20 bg-opacity-20 text-sm mb-8 hover:text-gray-200"
-                  />
+                    backgroundClass="bg-gray-600"
+                    classNames="relative z-20 bg-opacity-20 px-4 py-1 text-sm mb-8"
+                    noPadding
+                    roundedOnlyBigScreen
+                    renderTextAsChildren
+                  >
+                    Register now •{" "}
+                    <span className="hover:text-gray-200">
+                      Sessions, our virtual conference, starts on 16th June
+                    </span>
+                  </Button>
                 </div>
 
                 <h1 className="heading-primary font-bold">
@@ -43,7 +49,7 @@ const HomeHeroSection = () => {
                 style={{ width: "70%" }}
                 src="/images/phone-img.png"
                 alt="hero-image"
-                className="relative z-20 -ml-0 hidden md:block lg:-ml-8"
+                className="relative z-20 -ml-0 hidden md:block lg:-ml-8 filter drop-shadow-2xl "
               />
             </div>
           </div>

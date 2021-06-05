@@ -19,7 +19,7 @@ const GetStartedSection = () => {
               <p className="mt-4 mb-8 lg:mb-4 text-lg lg:w-4/5 w-full text-gray-600">
                 Explore{" "}
                 <Link href="#">
-                  <a className="text-blue-600 hover:text-blue-900">
+                  <a className="text-primary font-medium hover:text-gray-900">
                     Stripe Payments
                   </a>
                 </Link>
@@ -29,20 +29,20 @@ const GetStartedSection = () => {
               </p>
               <div className="flex items-center ">
                 <Button
-                  backgroundClass="bg-purple-600"
+                  backgroundClass="bg-primary"
                   hoverBackgroundClass="hover:bg-gray-900"
                   text="Start now"
                 />
                 <Button
                   text="Contact sales"
-                  classNames="text-purple-800 hover:text-gray-900"
+                  classNames="text-primary hover:text-gray-900"
                 />
               </div>
             </div>
             <div className="-mt-0 sm:-mt-8">
               <KnowWhatYouPayIcon />
               <h2 className="relative font-semibold mb-2 sm:mb-4 -mt-4">
-                <span className="top-0 -left-2 sm:-left-4 lg:-left-3 absolute border-l h-full border-blue-600"></span>
+                <span className="top-0 -left-2 sm:-left-4 lg:-left-3 absolute border-l h-full border-primary"></span>
                 Always know what you pay
               </h2>
               <p className="text-gray-700 mb-2 sm:mb-4 w-full xl:w-4/5 ">
@@ -50,14 +50,14 @@ const GetStartedSection = () => {
               </p>
               <Button
                 text="Pricing details"
-                classNames="text-purple-600 py-2 hover:text-gray-900"
+                classNames="text-primary py-2 hover:text-gray-900"
                 noPadding
               />
             </div>
             <div className="-mt-0 sm:-mt-8">
               <StartIntegrationIcon />
               <h2 className="relative font-semibold mb-2 sm:mb-4 -mt-4">
-                <span className="top-0 -left-2 sm:-left-4 md:-left-3 lg:-left-2.5 absolute border-l h-full border-blue-600"></span>
+                <span className="top-0 -left-2 sm:-left-4 md:-left-3 lg:-left-2.5 absolute border-l h-full border-primary"></span>
                 Start your integration
               </h2>
               <p className="text-gray-700 mb-2 sm:mb-4 w-full xl:w-11/12">
@@ -65,7 +65,7 @@ const GetStartedSection = () => {
               </p>
               <Button
                 text="Pricing details"
-                classNames="text-purple-600 py-2 hover:text-gray-900"
+                classNames="text-primary py-2 hover:text-gray-900"
                 noPadding
               />
             </div>

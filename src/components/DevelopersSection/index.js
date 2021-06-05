@@ -5,7 +5,7 @@ import { ToolsIcon, PrebuiltIcon } from "utils/icons";
 import Code from "./Code";
 
 const index = () => {
-  const clientCodeString = `const stripe = require('stripe')('sk_test_BQokikJOvBi2Hl4olfQ2');
+  const clientCodeString = `const stripe = require('stripe')('sk_test_BQokikJOvBi2Hl4olfQ2'); 
 
 await stripe.paymentIntents.create({
 amount: 2000,
@@ -33,9 +33,12 @@ currency: 'usd'
 `;
 
   return (
-    <>
+    <div
+      className="mx-auto -mt-28 sm:-mt-64 2xl:-mt-80"
+      style={{ maxWidth: "3280px" }}
+    >
       <div
-        className="bg-gray-900 -mt-20 sm:-mt-64 relative z-20"
+        className="bg-dark  relative z-20 flex items-center justify-center"
         style={{
           transform: "skewY(-6deg)",
           transformOrigin: "100% 0",
@@ -49,11 +52,11 @@ currency: 'usd'
           }}
         >
           <div className="relative pb-20 pt-44 md:pb-24 md:pt-56 ">
-            <DashedLines opacity="opacity-10" />
+            <DashedLines opacity="opacity-5" />
 
             <div className="grid sm:grid-cols-2 px-2 sm:px-4 text-gray-50">
               <div className="mb-16 sm:mb-0 sm:mr-4">
-                <h2 className="text-lg  text-blue-400 mb-8 font-semibold">
+                <h2 className="text-lg  text-accent mb-8 font-semibold">
                   Designed for developers
                 </h2>
                 <h1 className="text-4xl w-full sm:w-11/12 font-semibold">
@@ -66,7 +69,7 @@ currency: 'usd'
                 </p>
                 <div className="flex mt-6">
                   <Button
-                    backgroundClass="bg-blue-300"
+                    backgroundClass="bg-accent"
                     classNames="text-gray-900"
                     hoverBackgroundClass="hover:bg-gray-50"
                     text="Read the docs"
@@ -75,7 +78,7 @@ currency: 'usd'
                 <div className="flex items-center flex-col lg:flex-row gap-2 mt-8 lg:mt-10">
                   <div>
                     <ToolsIcon />
-                    <h3 className="-ml-2 sm:-ml-4 pl-4 border-l border-blue-500">
+                    <h3 className="-ml-2 sm:-ml-4 pl-4 border-l border-accent">
                       Tools for every stack
                     </h3>
                     <p className="text-gray-400 mt-4 mb-2 w-full sm:w-10/12">
@@ -84,13 +87,13 @@ currency: 'usd'
                     </p>
                     <Button
                       text="See libraries"
-                      classNames="text-blue-400 py-2 hover:text-gray-50"
+                      classNames="text-accent py-2 hover:text-gray-50"
                       noPadding
                     />
                   </div>
                   <div>
                     <PrebuiltIcon />
-                    <h3 className="-ml-2 sm:-ml-4 pl-4 border-l border-blue-500">
+                    <h3 className="-ml-2 sm:-ml-4 pl-4 border-l border-accent">
                       Prebuilt integrations
                     </h3>
                     <p className="text-gray-400 mt-4 mb-2 w-full sm:w-11/12">
@@ -99,7 +102,7 @@ currency: 'usd'
                     </p>
                     <Button
                       text="Explore partners"
-                      classNames="text-blue-400 py-2 hover:text-gray-50"
+                      classNames="text-accent py-2 hover:text-gray-50"
                       noPadding
                     />
                   </div>
@@ -135,7 +138,7 @@ currency: 'usd'
           ></div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

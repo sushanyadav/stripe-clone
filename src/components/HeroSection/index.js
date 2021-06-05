@@ -4,7 +4,8 @@ const HeroSection = ({ children, opacityClass }) => {
   return (
     <main className="relative pt-16">
       <span
-        className={`top-0 w-full h-full absolute z-20 overlay ${opacityClass}`}
+        className={`inset-0 w-full h-full absolute mx-auto z-20 overlay ${opacityClass}`}
+        style={{ maxWidth: "3280px" }}
       ></span>
 
       {children}

@@ -1,14 +1,16 @@
 import DashedLines from "components/DashedLines";
 
 const LogoSection = () => {
+  const className = "w-full md:w-32 lg:w-44 xl:w-48 h-full";
+
   return (
     <div className="container">
       <div className="relative">
         <DashedLines />
-        <section className=" z-10 py-20 grid gap-10 grid-cols-2 md:grid-cols-4">
+        <section className="py-20 grid gap-20 grid-cols-2 md:grid-cols-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="w-full h-20"
+            className={className}
             viewBox="0 0 200 40"
           >
             <g fill="none" fillRule="nonzero">
@@ -24,7 +26,7 @@ const LogoSection = () => {
           </svg>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="w-full h-20"
+            className={className}
             viewBox="0 0 200 40"
           >
             <g fill="none" fillRule="nonzero">
@@ -40,7 +42,7 @@ const LogoSection = () => {
           </svg>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="w-full h-20"
+            className={className}
             viewBox="0 0 200 40"
           >
             <g fill="none" fillRule="evenodd">
@@ -60,7 +62,7 @@ const LogoSection = () => {
           </svg>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="w-full h-20"
+            className={className}
             viewBox="0 0 200 40"
           >
             <g fill="none" fillRule="nonzero">
@@ -89,7 +91,7 @@ const LogoSection = () => {
 
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="w-full h-20"
+            className={className}
             viewBox="0 0 200 40"
           >
             <path
@@ -111,7 +113,7 @@ const LogoSection = () => {
           </svg>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="w-full h-20"
+            className={className}
             viewBox="0 0 200 40"
           >
             <g fill="none" fillRule="nonzero">
@@ -140,7 +142,7 @@ const LogoSection = () => {
           </svg>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="w-full h-20"
+            className={className}
             viewBox="0 0 200 40"
           >
             <path
@@ -152,7 +154,7 @@ const LogoSection = () => {
           {/* Zoom */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="w-full h-20"
+            className={className}
             viewBox="0 0 200 40"
           >
             <path

@@ -5,10 +5,13 @@ import FooterNavItems from "components/Layout/Footer/FooterNavItems";
 export default function Footer() {
   return (
     <>
-      <footer className="overflow-y-hidden -mt-20">
+      <footer
+        className="overflow-hidden -mt-20 mx-auto"
+        style={{ maxWidth: "3280px" }}
+      >
         <StripeLines />
         <div
-          className="bg-gray-50"
+          className="bg-light-gray"
           style={{
             transform: "skewY(-6deg)",
             transformOrigin: "100% 0",

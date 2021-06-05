@@ -50,7 +50,7 @@ export default function Navbar() {
           onClick={() => setOpenMenu(!openMenu)}
         >
           {!openMenu && (
-            <div className="bg-gray-200 rounded-xl p-2 bg-opacity-10 shadow-sm">
+            <div className="bg-gray-200 rounded-xl p-2 mr-2 bg-opacity-10 shadow-sm">
               <OpenIcon />
             </div>
           )}
