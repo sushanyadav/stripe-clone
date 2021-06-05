@@ -1,4 +1,9 @@
-const LanguageList = ({ setSelectedLanguage, setShowLanguage }) => {
+const LanguageList = ({
+  styles,
+  attributes,
+  setPopperElement,
+  handleCurrentLanguage,
+}) => {
   const languages = [
     "Deutsch",
     "English (United States)",
@@ -16,38 +21,40 @@ const LanguageList = ({ setSelectedLanguage, setShowLanguage }) => {
     "简体中文",
   ];
 
-  const langClickHandler = (lang) => {
-    setShowLanguage(false);
-    setSelectedLanguage(lang);
-  };
-
   return (
-    <div className="bg-white absolute -bottom-2 sm:bottom-5 lg:-bottom-4 xl:bottom-1 2xl:bottom-0 left-10 right-4 p-8 max-w-xs rounded-lg shadow-xl">
-      <div className="relative">
-        <ul className="space-y-3">
-          {languages.map((lang) => (
-            <li
-              key={lang}
-              className="cursor-pointer hover:opacity-60"
-              onClick={() => langClickHandler(lang)}
-            >
-              {lang}
-            </li>
-          ))}
-        </ul>
-        <div
-          style={{
-            width: "0",
-            height: "0",
-            borderLeft: "0.6rem solid transparent",
-            borderRight: "0.6em solid transparent",
-            borderTop: "0.6rem solid #fff",
-            position: "absolute",
-            bottom: "-2.5rem",
-            left: "0",
-            zIndex: 5,
-          }}
-        ></div>
+    <div
+      ref={setPopperElement}
+      style={{ ...styles.popper, bottom: "0.3rem" }}
+      {...attributes.popper}
+      className="z-50  w-64"
+    >
+      <div className="bg-white px-8 py-4 rounded-lg shadow-2xl border-gray-200 border">
+        <div className="relative">
+          <ul className="space-y-3">
+            {languages.map((lang) => (
+              <li
+                key={lang}
+                className="cursor-pointer hover:opacity-60"
+                onClick={() => handleCurrentLanguage(lang)}
+              >
+                {lang}
+              </li>
+            ))}
+          </ul>
+          <div
+            style={{
+              width: "0",
+              height: "0",
+              borderLeft: "0.6rem solid transparent",
+              borderRight: "0.6em solid transparent",
+              borderTop: "0.6rem solid #fff",
+              position: "absolute",
+              bottom: "-1.5rem",
+              left: "-1rem",
+              zIndex: 5,
+            }}
+          ></div>
+        </div>
       </div>
     </div>
   );

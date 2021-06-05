@@ -94,24 +94,24 @@ const MobileNavBar = ({ closeMenu }) => {
       linkTo: "#",
     },
     {
-      id: "additionalItem8",
+      id: "additionalItem9",
       icon: NewsroomIcon,
       primaryText: "Newsroom",
       linkTo: "#",
     },
     {
-      id: "additionalItem9",
+      id: "additionalItem10",
       icon: BlogIcon,
       primaryText: "Blog",
       linkTo: "#",
     },
   ];
 
-  const countriesDomNode = useOutsideAlerter(closeMenu);
+  const navDomNode = useOutsideAlerter(closeMenu);
 
   return (
     <>
-      <div ref={countriesDomNode} className="bg-white rounded-lg shadow-lg">
+      <div ref={navDomNode} className="bg-white rounded-lg shadow-lg">
         <div className="space-y-4">
           <div className="p-6">
             <div className="flex items-center justify-between mb-4">

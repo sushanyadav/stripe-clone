@@ -73,6 +73,7 @@
   );
 
   @include min-break-point(mobile-phone) {
+    height: 31rem;
     clip-path: polygon(0 0, 100% 0, 100% 61%, 0 82%);
   }
 
