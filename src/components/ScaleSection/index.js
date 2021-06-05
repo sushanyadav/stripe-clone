@@ -4,7 +4,10 @@ import Link from "next/link";
 
 const ScaleSection = () => {
   return (
-    <div className="overflow-hidden mx-auto" style={{ maxWidth: "3280px" }}>
+    <div
+      className="overflow-hidden mx-auto relative"
+      style={{ maxWidth: "4280px" }}
+    >
       <div
         className="relative z-10 h-10 sm:h-16 w-full"
         style={{
@@ -41,7 +44,7 @@ const ScaleSection = () => {
             transformOrigin: "100% 0",
           }}
         >
-          <div className="relative pt-28 md:pt-40 pb-10 md:pb-14 2xl:pb-24 ">
+          <div className="relative pt-28 md:pt-40 pb-10 md:pb-14 2xl:pb-24 3xl:pb-36">
             <DashedLines opacity="opacity-5" />
             <div className=" px-2 sm:px-4 text-gray-50 py-20">
               <div className="mb-16 sm:mb-0 sm:mr-4">

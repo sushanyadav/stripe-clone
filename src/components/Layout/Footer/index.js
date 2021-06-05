@@ -7,7 +7,7 @@ export default function Footer() {
     <>
       <footer
         className="overflow-hidden -mt-20 mx-auto"
-        style={{ maxWidth: "3280px" }}
+        style={{ maxWidth: "4280px" }}
       >
         <StripeLines />
         <div

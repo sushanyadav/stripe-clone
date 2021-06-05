@@ -61,7 +61,7 @@ const CountriesList = ({
       <div className="bg-white p-8 rounded-t-lg shadow-2xl border-gray-50 border">
         <Button
           text="Sign up instantly"
-          classNames="text-gray-700 py-2 hover:text-gray-900 mb-4"
+          classNames="text-gray-700 py-2 hover:opacity-60 mb-4"
           noPadding
         />
         <ul
@@ -112,7 +112,7 @@ const CountriesList = ({
       <div className="bg-gray-50 relative p-8 rounded-b-lg  shadow-xl">
         <Button
           text="Request a invite"
-          classNames="text-gray-700 py-2 hover:text-gray-900"
+          classNames="text-gray-700 py-2 hover:opacity-60"
           noPadding
         />
         <div
