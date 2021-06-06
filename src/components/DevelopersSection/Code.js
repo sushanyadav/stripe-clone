@@ -2,7 +2,14 @@ import Highlight, { defaultProps } from "prism-react-renderer";
 import lightTheme from "prism-react-renderer/themes/dracula";
 import darkTheme from "prism-react-renderer/themes/vsDark";
 
-const Code = ({ codeString, hasHeading, noLineNumbers, topRounded, dark }) => {
+const Code = ({
+  codeString,
+  hasHeading,
+  noLineNumbers,
+  topRounded,
+  dark,
+  typeIf,
+}) => {
   const topRoundedClass = topRounded ? "rounded-b-none" : "rounded-t-none";
 
   const theme = dark ? darkTheme : lightTheme;
@@ -68,18 +75,16 @@ const Code = ({ codeString, hasHeading, noLineNumbers, topRounded, dark }) => {
             <div className="overflow-scroll code">
               {tokens.map((line, i) => {
                 return (
-                  <div
-                    key={i}
-                    {...getLineProps({ line, key: i })}
-                    className="flex gap-6"
-                  >
-                    <div>
-                      {line.map((token, key) => {
-                        return (
-                          <span key={key} {...getTokenProps({ token, key })} />
-                        );
-                      })}
-                    </div>
+                  <div key={i} {...getLineProps({ line, key: i })}>
+                    {line.map((token, key) => {
+                      return (
+                        <span key={key} {...getTokenProps({ token, key })} />
+                      );
+                    })}
+
+                    {typeIf && line === tokens[tokens.length - 1] && (
+                      <span className="animate-ping  ml-1.5 bg-gray-50">_</span>
+                    )}
                   </div>
                 );
               })}

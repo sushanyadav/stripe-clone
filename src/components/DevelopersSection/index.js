@@ -19,43 +19,29 @@ const index = () => {
 await stripe.paymentIntents.create({
 amount: 2000,
 currency: 'usd'
-});
-
-
-
-
-
-
-`;
+});`;
 
   const serverCodeString = `$node server.js && stripe listen
 > Ready! Waiting for requests...
 2021-05-01 17:17:52 [200] payment_intent.created
 2021-05-01 17:17:52 [200] charge.succeeded
-2021-05-01 17:17:52 [200] payment_intent.succeeded
-
-
-
-
-
-
-`;
+2021-05-01 17:17:52 [200] payment_intent.succeeded`;
 
   const { observerEntry, elRef } = useIntersectionObserver({ threshold: 0.1 });
 
   const typeWrite = (string, codeArray, setCodeArray) => {
     let currentIndex = 0;
-    const strings = string.split("");
+    const stringsArray = string.split("");
 
-    if (codeArray.length < strings.length) {
+    if (codeArray.length < stringsArray.length) {
       const time = setInterval(() => {
-        const item = strings[currentIndex];
+        const item = stringsArray[currentIndex];
 
         currentIndex = currentIndex + 1;
 
         setCodeArray((prev) => [...prev, item]);
 
-        if (currentIndex === strings.length) clearInterval(time);
+        if (currentIndex === stringsArray.length) clearInterval(time);
       }, 50);
     }
   };
@@ -151,8 +137,17 @@ currency: 'usd'
                   </div>
                 </div>
                 <div ref={elRef} className="overflow-x-scroll">
-                  <Code codeString={clientCodeArray.join("")} topRounded />
                   <Code
+                    typeIf={
+                      clientCodeArray.length < clientCodeString.split("").length
+                    }
+                    codeString={clientCodeArray.join("")}
+                    topRounded
+                  />
+                  <Code
+                    typeIf={
+                      serverCodeArray.length < serverCodeString.split("").length
+                    }
                     codeString={serverCodeArray.join("")}
                     hasHeading
                     dark
