@@ -11,8 +11,8 @@ import {
 
 const index = () => {
   return (
-    <div className="container pt-24 pb-14 xl:pt-36 2xl:pt-40 md:pb-8">
-      <div className="relative ">
+    <div className="container ">
+      <div className="relative pt-24 pb-14 xl:pt-36 2xl:pt-40 md:pb-8">
         <DashedLines />
         <div className="px-2 sm:px-4">
           <div className="py-10">

@@ -1,11 +1,20 @@
+import { useEffect, useState } from "react";
+
 import Button from "components/Button";
 import DashedLines from "components/DashedLines";
 
+import useIntersectionObserver from "hooks/useIntersectionObserver";
+
 import { ToolsIcon, PrebuiltIcon } from "utils/icons";
+
 import Code from "./Code";
 
 const index = () => {
-  const clientCodeString = `const stripe = require('stripe')('sk_test_BQokikJOvBi2Hl4olfQ2'); 
+  const [clientCodeArray, setClientCodeArray] = useState([]);
+  const [serverCodeArray, setServerCodeArray] = useState([]);
+  const [show, setShow] = useState(false);
+
+  const clientCodeString = `const stripe = require('stripe')('sk_test_BQokikJOvBi2Hl4olfQ2');
 
 await stripe.paymentIntents.create({
 amount: 2000,
@@ -31,6 +40,38 @@ currency: 'usd'
 
 
 `;
+
+  const { observerEntry, elRef } = useIntersectionObserver({ threshold: 0.1 });
+
+  const typeWrite = (string, codeArray, setCodeArray) => {
+    let currentIndex = 0;
+    const strings = string.split("");
+
+    if (codeArray.length < strings.length) {
+      const time = setInterval(() => {
+        const item = strings[currentIndex];
+
+        currentIndex = currentIndex + 1;
+
+        setCodeArray((prev) => [...prev, item]);
+
+        if (currentIndex === strings.length) clearInterval(time);
+      }, 50);
+    }
+  };
+
+  useEffect(() => {
+    if (show) {
+      typeWrite(clientCodeString, clientCodeArray, setClientCodeArray);
+      typeWrite(serverCodeString, serverCodeArray, setServerCodeArray);
+    }
+  }, [show]);
+
+  useEffect(() => {
+    if (observerEntry.isIntersecting) {
+      setShow(true);
+    }
+  }, [observerEntry]);
 
   return (
     <>
@@ -109,9 +150,14 @@ currency: 'usd'
                     </div>
                   </div>
                 </div>
-                <div className="overflow-x-scroll">
-                  <Code codeString={clientCodeString} topRounded />
-                  <Code codeString={serverCodeString} hasHeading dark />
+                <div ref={elRef} className="overflow-x-scroll">
+                  <Code codeString={clientCodeArray.join("")} topRounded />
+                  <Code
+                    codeString={serverCodeArray.join("")}
+                    hasHeading
+                    dark
+                    noLineNumbers
+                  />
                 </div>
               </div>
             </div>

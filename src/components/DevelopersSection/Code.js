@@ -40,32 +40,50 @@ const Code = ({ codeString, hasHeading, noLineNumbers, topRounded, dark }) => {
               </div>
             </div>
           )}
+
           <pre
-            className={`${className} ${topRoundedClass} rounded-lg p-4 overflow-scroll code`}
+            className={`${className} ${topRoundedClass} flex gap-3 rounded-lg p-4`}
             style={style}
           >
-            {tokens.map((line, i) => {
-              return (
-                <div
-                  key={i}
-                  {...getLineProps({ line, key: i })}
-                  className="flex gap-6"
-                >
-                  {!noLineNumbers && (
-                    <span className="opacity-20 select-none">
-                      {line.length === 1 && line[0].empty ? "~" : i + 1}
-                    </span>
-                  )}
-                  <div>
-                    {line.map((token, key) => {
-                      return (
-                        <span key={key} {...getTokenProps({ token, key })} />
-                      );
-                    })}
+            <div
+              className={`${
+                noLineNumbers ? "opacity-0" : "opacity-20"
+              } flex flex-col  select-none`}
+            >
+              <span>1</span>
+              <span>~</span>
+              <span>2</span>
+              <span>3</span>
+              <span>4</span>
+              <span>5</span>
+              <span>~</span>
+              <span>~</span>
+              <span>~</span>
+              <span>~</span>
+              <span>~</span>
+              <span>~</span>
+              <span>~</span>
+            </div>
+
+            <div className="overflow-scroll code">
+              {tokens.map((line, i) => {
+                return (
+                  <div
+                    key={i}
+                    {...getLineProps({ line, key: i })}
+                    className="flex gap-6"
+                  >
+                    <div>
+                      {line.map((token, key) => {
+                        return (
+                          <span key={key} {...getTokenProps({ token, key })} />
+                        );
+                      })}
+                    </div>
                   </div>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
           </pre>
         </>
       )}
