@@ -46,7 +46,7 @@ const HomeHeroSection = () => {
               </div>
 
               <img
-                style={{ width: "70%" }}
+                style={{ width: "50rem" }}
                 src="/images/phone-img.png"
                 alt="hero-image"
                 className="relative z-20 -ml-0 hidden md:block lg:-ml-8 filter drop-shadow-2xl "
